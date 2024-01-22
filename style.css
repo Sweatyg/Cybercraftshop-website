@@ -201,6 +201,7 @@ header nav span a:hover::before {
   background-color: #c3e4cd; /* Light green background for product containers */
   padding: 20px;
   border-radius: 10px; /* Rounded corners for a softer look */
+  position: relative;
 }
 
 .img-content img {
@@ -235,3 +236,76 @@ header nav span a:hover::before {
   display: flex;
   justify-content: space-between;
 }
+
+
+.img-content.flip {
+  perspective: 1000px;
+  display: inline-block;
+  position: relative; /* Add relative positioning */
+}
+
+
+
+.img-content .front-image,
+.img-content .back-image {
+    transition: opacity 0.5s, transform 0.5s;
+    transform-style: preserve-3d;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 1; /* Set default opacity for both images */
+    width: 100%; /* Make the images fill the container width */
+    max-width: 100%; /* Ensure the images don't exceed their container width */
+    max-height: 100%; /* Ensure the images don't exceed their container height */
+}
+
+.img-content .back-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: rotateY(180deg);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.img-content:hover .front-image {
+    opacity: 0; /* Hide the front image when hovered */
+    transform: rotateY(-180deg);
+}
+
+.img-content:hover .back-image {
+    opacity: 1; /* Show the back image when hovered */
+    transform: rotateY(0deg);
+}
+
+.img-content {
+  position: relative;
+}
+
+.img-content img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.img-content .back-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: rotateY(180deg);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.img-content:hover .front-image {
+  opacity: 0;
+  transform: rotateY(-180deg);
+}
+
+.img-content:hover .back-image {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
