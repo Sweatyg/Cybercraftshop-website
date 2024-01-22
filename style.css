@@ -31,7 +31,7 @@ html {
 
 body {
   overflow-x: hidden;
-  cursor: url('./greencursor.png'),auto;
+  cursor: url('./maincursor.png'), auto;
 }
 #Home {
   background-color: #c3e4cd; 
@@ -131,6 +131,10 @@ header nav span a:hover::before {
   width: 100%;
 }
 
+.menu-span a{
+  cursor: url("./pointercursor.png"), auto;
+}
+
 #About {
   background-color: #d9f5e8; 
   padding: 50px 100px;
@@ -203,6 +207,7 @@ header nav span a:hover::before {
   padding: 20px;
   border-radius: 10px; 
   position: relative;
+  cursor: url("./pointercursor.png"), auto;
 }
 
 .img-content img {
@@ -300,13 +305,4 @@ header nav span a:hover::before {
   transition: opacity 0.5s, transform 0.5s;
 }
 
-.img-content:hover .front-image {
-  opacity: 0;
-  transform: rotateY(-180deg);
-}
-
-.img-content:hover .back-image {
-  opacity: 1;
-  transform: rotateY(0deg);
-}
 
