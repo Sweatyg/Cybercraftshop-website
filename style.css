@@ -31,9 +31,10 @@ html {
 
 body {
   overflow-x: hidden;
+  cursor: url('./greencursor.png'),auto;
 }
 #Home {
-  background-color: #c3e4cd; /* Updated background color to match the website palette */
+  background-color: #c3e4cd; 
   background-image: url(./realvalbackground.png);
   background-size: cover;
   min-height: 100vh;
@@ -46,7 +47,7 @@ body {
 
 #Home h1 {
   font-family: "Lulo Clean W01 One Bold";
-  color: #a1d99b; /* Updated to a brighter green color */
+  color: #a1d99b; 
   position: absolute;
   font-size: 60px;
   text-shadow: rgba(0, 0, 0, 0.4) 2px 2px 4px;
@@ -131,27 +132,27 @@ header nav span a:hover::before {
 }
 
 #About {
-  background-color: #d9f5e8; /* Light green background color for the About section */
+  background-color: #d9f5e8; 
   padding: 50px 100px;
   min-height: 50vh;
-  font-size: 20px; /* Slightly reduced font size for a cleaner look */
+  font-size: 20px; 
   line-height: 1.6;
 }
 
 #About h1 {
   font-family: "Lulo Clean W01 One Bold";
-  color: #417d5a; /* Dark green heading color */
-  font-size: 36px; /* Slightly reduced heading font size */
+  color: #417d5a; 
+  font-size: 36px; 
   padding-top: 50px;
   margin-bottom: 50px;
 }
 
 #About p {
-  padding: 10px 0; /* Adjusted padding for better spacing after each <br> tag */
-  color: #587d66; /* Medium green text color */
+  padding: 10px 0; 
+  color: #587d66; 
   font-family: "Lulo Clean W01 One";
-  font-size: 18px; /* Slightly reduced text font size */
-  font-weight: 600; /* Added a bit more weight for a bolder look */
+  font-size: 18px; 
+  font-weight: 600; 
 }
 
 
@@ -165,14 +166,14 @@ header nav span a:hover::before {
 }
 
 #Shop {
-  background-color: #d9f5e8; /* Light green background color */
+  background-color: #d9f5e8;
   padding: 50px 100px;
   min-height: 200vh;
   font-size: 20px;
 }
 
 #Shop h1 {
-  color: #417d5a; /* Dark green heading color */
+  color: #417d5a; 
   font-size: 40px;
   padding-top: 50px;
   font-family: "Lulo Clean W01 One Bold";
@@ -198,27 +199,27 @@ header nav span a:hover::before {
   flex-direction: column;
   align-items: center;
   width: 20%;
-  background-color: #c3e4cd; /* Light green background for product containers */
+  background-color: #c3e4cd; 
   padding: 20px;
-  border-radius: 10px; /* Rounded corners for a softer look */
+  border-radius: 10px; 
   position: relative;
 }
 
 .img-content img {
   width: 100%;
   margin-bottom: 10px;
-  border-radius: 5px; /* Rounded corners for product images */
+  border-radius: 5px; 
 }
 
 #val-poster {
-  font-size: 14px; /* Adjusted font size for product details */
+  font-size: 14px; 
   margin-top: 10px;
 }
 
 .img-content p {
-  color: #417d5a; /* Dark green text color */
+  color: #417d5a; 
   font-family: "Lulo Clean W01 One";
-  font-size: 16px; /* Adjusted font size for product details */
+  font-size: 16px; 
   font-weight: 600;
   text-align: center;
 }
@@ -241,7 +242,7 @@ header nav span a:hover::before {
 .img-content.flip {
   perspective: 1000px;
   display: inline-block;
-  position: relative; /* Add relative positioning */
+  position: relative; 
 }
 
 
@@ -255,10 +256,10 @@ header nav span a:hover::before {
     right: 0;
     bottom: 0;
     margin: auto;
-    opacity: 1; /* Set default opacity for both images */
-    width: 100%; /* Make the images fill the container width */
-    max-width: 100%; /* Ensure the images don't exceed their container width */
-    max-height: 100%; /* Ensure the images don't exceed their container height */
+    opacity: 1; 
+    width: 100%; 
+    max-width: 100%; 
+    max-height: 100%; 
 }
 
 .img-content .back-image {
@@ -271,12 +272,12 @@ header nav span a:hover::before {
 }
 
 .img-content:hover .front-image {
-    opacity: 0; /* Hide the front image when hovered */
+    opacity: 0; 
     transform: rotateY(-180deg);
 }
 
 .img-content:hover .back-image {
-    opacity: 1; /* Show the back image when hovered */
+    opacity: 1; 
     transform: rotateY(0deg);
 }
 
