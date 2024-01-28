@@ -306,4 +306,23 @@ header nav span a:hover::before {
   transition: opacity 0.5s, transform 0.5s;
 }
 
+.page-navigation{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  margin: 20px auto;
+}
+
+.page-navigation a{
+  margin-left: 10px;
+}
+
+.page-navigation h2{
+  color: #417d5a; 
+  text-decoration: none;
+  font-family: "Lulo Clean W01 One";
+  font-size: 32px;
+  font-weight: bolder;
+}
 
