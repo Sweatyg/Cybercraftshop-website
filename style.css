@@ -316,6 +316,7 @@ header nav span a:hover::before {
 
 .page-navigation a{
   margin-left: 10px;
+  text-decoration: none;
 }
 
 .page-navigation h2{
@@ -324,5 +325,6 @@ header nav span a:hover::before {
   font-family: "Lulo Clean W01 One";
   font-size: 32px;
   font-weight: bolder;
+  text-decoration: none;
 }
 
