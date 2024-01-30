@@ -1,9 +1,10 @@
 * {
   font-family: sans-serif;
-  color: white;
+  color: #FFFFFF; /* White */
   padding: 0px;
   margin: 0px;
 }
+
 @font-face {
   font-family: "Lulo Clean W01 One Bold";
   src: url("https://db.onlinewebfonts.com/t/39a2c7f346d5cfae7045aeb2fb50d9ad.eot");
@@ -32,9 +33,11 @@ html {
 body {
   overflow-x: hidden;
   cursor: url('./maincursor.png'), auto;
+  background-color: #333333; /* Dark Gray */
 }
+
 #Home {
-  background-color: #c3e4cd; 
+  background-color: #CCCCCC; /* Light Gray */
   background-image: url(./realvalbackground.png);
   background-size: cover;
   min-height: 100vh;
@@ -47,7 +50,7 @@ body {
 
 #Home h1 {
   font-family: "Lulo Clean W01 One Bold";
-  color: #a1d99b; 
+  color: #FFFFFF; /* White */
   position: absolute;
   font-size: 60px;
   text-shadow: rgba(0, 0, 0, 0.4) 2px 2px 4px;
@@ -68,23 +71,28 @@ body {
   width: 100%;
   pointer-events: none;
 }
+
 #Mountain2 {
   width: 100%;
   z-index: 3;
   pointer-events: none;
 }
+
 #leftCloud,
 #mainCloud,
 #rightCloud {
   top: 120px;
   width: 200px;
 }
+
 #leftCloud {
   left: 20px;
 }
+
 #rightCloud {
   right: 20px;
 }
+
 @keyframes loadAnimation {
   0% {
     opacity: 0;
@@ -95,6 +103,7 @@ body {
     transform: translateY(0%);
   }
 }
+
 header nav {
   position: absolute;
   width: 90%;
@@ -106,6 +115,7 @@ header nav {
   font-size: 22px;
   animation: loadAnimation 2s;
 }
+
 header nav span {
   width: 50%;
   padding-right: 60px;
@@ -113,13 +123,15 @@ header nav span {
   justify-content: space-around;
   font-weight: 600;
 }
+
 header nav span a {
   text-decoration: none;
   position: relative;
 }
+
 header nav span a::before {
   content: "";
-  background-color: white;
+  background-color: #FFFFFF; /* White */
   width: 0%;
   height: 2.5px;
   display: unset;
@@ -128,57 +140,57 @@ header nav span a::before {
   bottom: -5px;
   transition: 0.3s;
 }
+
 header nav span a:hover::before {
   width: 100%;
 }
 
-.menu-span a{
+.menu-span a {
   cursor: url("./pointercursor.png"), auto;
 }
 
 #About {
-  background-color: #d9f5e8; 
+  background-color: #CCCCCC; /* Light Gray */
   padding: 50px 100px;
   min-height: 50vh;
-  font-size: 20px; 
+  font-size: 20px;
   line-height: 1.6;
 }
 
 #About h1 {
   font-family: "Lulo Clean W01 One Bold";
-  color: #417d5a; 
-  font-size: 36px; 
+  color: #FFFFFF; /* White */
+  font-size: 36px;
   padding-top: 50px;
   margin-bottom: 50px;
 }
 
 #About p {
-  padding: 10px 0; 
-  color: #587d66; 
+  padding: 10px 0;
+  color: #FFFFFF; /* White */
   font-family: "Lulo Clean W01 One";
-  font-size: 18px; 
-  font-weight: 600; 
+  font-size: 18px;
+  font-weight: 600;
 }
 
-
-
-.active{
-    color: black;
+.active {
+  color: #000000; /* Black */
 }
-.active::before{
-    background-color: black;
-    width: 100%;
+
+.active::before {
+  background-color: #000000; /* Black */
+  width: 100%;
 }
 
 #Shop {
-  background-color: #d9f5e8;
+  background-color: #CCCCCC; /* Light Gray */
   padding: 50px 100px;
   min-height: 200vh;
   font-size: 20px;
 }
 
 #Shop h1 {
-  color: #417d5a; 
+  color: #FFFFFF; /* White */
   font-size: 40px;
   padding-top: 50px;
   font-family: "Lulo Clean W01 One Bold";
@@ -204,9 +216,9 @@ header nav span a:hover::before {
   flex-direction: column;
   align-items: center;
   width: 20%;
-  background-color: #c3e4cd; 
+  background-color: #444444; /* Dark Gray */
   padding: 20px;
-  border-radius: 10px; 
+  border-radius: 10px;
   position: relative;
   cursor: url("./pointercursor.png"), auto;
 }
@@ -214,58 +226,55 @@ header nav span a:hover::before {
 .img-content img {
   width: 100%;
   margin-bottom: 10px;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
 
 #val-poster {
-  font-size: 14px; 
+  font-size: 14px;
   margin-top: 10px;
 }
 
 .img-content p {
-  color: #417d5a; 
+  color: #FFFFFF; /* White */
   font-family: "Lulo Clean W01 One";
-  font-size: 16px; 
+  font-size: 16px;
   font-weight: 600;
   text-align: center;
 }
 
-.img-mid{
+.img-mid {
   margin-top: 50px;
   width: 75%;
   display: flex;
   justify-content: space-between;
 }
 
-.img-bottom{
+.img-bottom {
   margin-top: 50px;
   width: 75%;
   display: flex;
   justify-content: space-between;
 }
-
 
 .img-content.flip {
   perspective: 1000px;
   display: inline-block;
-  position: relative; 
+  position: relative;
 }
-
-
 
 .img-content .front-image,
 .img-content .back-image {
-    transition: opacity 0.5s, transform 0.5s;
-    transform-style: preserve-3d;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    opacity: 1; 
-    width: 100%; 
-    max-width: 100%; 
-    max-height: 100%; 
+  transition: opacity 0.5s, transform 0.5s;
+  transform-style: preserve-3d;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 1;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .img-content .back-image {
@@ -278,23 +287,17 @@ header nav span a:hover::before {
 }
 
 .img-content:hover .front-image {
-    opacity: 0; 
-    transform: rotateY(-180deg);
+  opacity: 0;
+  transform: rotateY(-180deg);
 }
 
 .img-content:hover .back-image {
-    opacity: 1; 
-    transform: rotateY(0deg);
+  opacity: 1;
+  transform: rotateY(0deg);
 }
 
 .img-content {
   position: relative;
-}
-
-.img-content img {
-  width: 100%;
-  margin-bottom: 10px;
-  border-radius: 5px;
 }
 
 .img-content .back-image {
@@ -306,7 +309,7 @@ header nav span a:hover::before {
   transition: opacity 0.5s, transform 0.5s;
 }
 
-.page-navigation{
+.page-navigation {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -314,17 +317,16 @@ header nav span a:hover::before {
   margin: 20px auto;
 }
 
-.page-navigation a{
+.page-navigation a {
   margin-left: 10px;
   text-decoration: none;
 }
 
-.page-navigation h2{
-  color: #417d5a; 
+.page-navigation h2 {
+  color: #FFFFFF; /* White */
   text-decoration: none;
   font-family: "Lulo Clean W01 One";
   font-size: 32px;
   font-weight: bolder;
   text-decoration: none;
 }
-
