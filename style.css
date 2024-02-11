@@ -33,11 +33,11 @@ html {
 body {
   overflow-x: hidden;
   cursor: url('./maincursor.png'), auto;
-  background-color: #333333; /* Dark Gray */
+  background-color: #0E0E0E; /* Dark Background */
 }
 
 #Home {
-  background-color: #CCCCCC; /* Light Gray */
+  background-color: #201F3E; /* Dark Purple */
   background-image: url(./realvalbackground.png);
   background-size: cover;
   min-height: 100vh;
@@ -150,7 +150,7 @@ header nav span a:hover::before {
 }
 
 #About {
-  background-color: #CCCCCC; /* Light Gray */
+  background-color: #586ae2;
   padding: 50px 100px;
   min-height: 50vh;
   font-size: 20px;
@@ -183,7 +183,7 @@ header nav span a:hover::before {
 }
 
 #Shop {
-  background-color: #CCCCCC; /* Light Gray */
+  background-color: #586ae2;
   padding: 50px 100px;
   min-height: 200vh;
   font-size: 20px;
@@ -216,7 +216,7 @@ header nav span a:hover::before {
   flex-direction: column;
   align-items: center;
   width: 20%;
-  background-color: #444444; /* Dark Gray */
+  background-color: #201F3E; /* Dark Purple */
   padding: 20px;
   border-radius: 10px;
   position: relative;
